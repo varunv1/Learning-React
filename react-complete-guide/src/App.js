@@ -1,13 +1,13 @@
 import React from "react";
-import Card from "./components/Card/Card";
-import Expenses from "./components/Expenses/Expenses";
+import Expenses from "./Components/Expenses";
+import Card from "./Card/Card";
 
-function App() {
+const app = () => {
   return (
     <Card>
       <Expenses />
-    </Card>
+      </Card>
   );
-}
+};
 
-export default App;
+export default app;
