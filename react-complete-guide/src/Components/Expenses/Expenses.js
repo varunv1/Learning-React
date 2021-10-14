@@ -3,6 +3,7 @@ import ExpenseItem from "./ExpenseItem";
 import Card from "../Card/Card";
 import NewExpense from "../NewExpense/NewExpense";
 import ExpensesFilter from "./ExpensesFilter";
+import ExpensesChart from "./ExpensesChart";
 
 const Expenses = () => {
 
@@ -24,13 +25,13 @@ const Expenses = () => {
         id: 3,
         title: "Scooty service",
         amount: 900,
-        date: new Date(2021, 2, 26),
+        date: new Date(2019, 2, 26),
       },
       {
         id: 4,
         title: "Home rent",
         amount: 10000,
-        date: new Date(2021, 8, 1),
+        date: new Date(2021, 1, 1),
       }
   ]);
 
@@ -59,6 +60,7 @@ const Expenses = () => {
       <Card>
           <NewExpense onNewExpense = {expenseHandler}/>
           <ExpensesFilter onYearChange = {yearHandler} selectedYear = {year}/>
+          <ExpensesChart expenses = {expenseListFilter()}/>
           {defaultMessage}
       </Card>
   );
