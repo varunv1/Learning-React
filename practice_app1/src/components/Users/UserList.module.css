@@ -1,0 +1,11 @@
+.list{
+    color: rgb(107, 6, 102);
+    list-style: none;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px rgba(107, 6, 102, 0.25);
+    margin: 15px;
+    margin-right: 55px;
+    padding: 15px;
+    
+
+}

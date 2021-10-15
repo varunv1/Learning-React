@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Card from "./components/Card/Card";
+import AddNewUser from "./components/Users/AddNewUser";
+import { useState } from "react";
+import Users from "./components/Users/Users";
 
 function App() {
+  const [users, setUsers] = useState([]);
+
+  const addUserHandler = (userData) => {
+    setUsers((preUser) =>[...preUser,userData]);
+
+    // need to add new users data to the state
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Card>
+      <Card>
+        <AddNewUser onAddUser={addUserHandler} />
+      </Card>
+      <Card>
+        <Users userData={users} />
+      </Card>
+    </Card>
   );
 }
 
