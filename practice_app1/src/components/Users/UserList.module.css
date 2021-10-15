@@ -1,11 +1,16 @@
-.list{
-    color: rgb(107, 6, 102);
+.users {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 40rem;
+  }
+  
+  .users ul {
     list-style: none;
-    border-radius: 15px;
-    box-shadow: 2px 2px 8px rgba(107, 6, 102, 0.25);
-    margin: 15px;
-    margin-right: 55px;
-    padding: 15px;
-    
-
-}
+    padding: 1rem;
+  }
+  
+  .users li {
+    border: 1px solid #ccc;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }

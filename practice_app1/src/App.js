@@ -1,7 +1,7 @@
+import React, {useState} from "react";
 import "./App.css";
-import Card from "./components/Card/Card";
+import Card from "./components/UI/Card";
 import AddNewUser from "./components/Users/AddNewUser";
-import { useState } from "react";
 import Users from "./components/Users/Users";
 
 function App() {
