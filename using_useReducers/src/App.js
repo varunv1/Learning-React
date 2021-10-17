@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import MainHeader from './components/MainHeader/MainHeader';
 import AuthContext from './components/store/auth-context';
 
+
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -27,7 +28,11 @@ function App() {
     localStorage.removeItem('isLoggedIn');
     setIsLoggedIn(false);
   };
+// -------------IMP-------------------
+  // Still missing some of the changes like useforewardrefs, useContext updates ....
+  // need to revisit last 3-4 videos and implement nativeTouchData.
 
+// -----------------IMP-------------------
   return (
       <AuthContext.Provider value = {{
         isLoggedIn: isLoggedIn,
