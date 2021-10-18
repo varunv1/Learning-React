@@ -1,13 +1,13 @@
-import Card from "./Components/UI/Card";
+import { Fragment } from "react/cjs/react.production.min";
+import Header from "./components/Layout/Header";
+import Meals from "./components/Meals/Meals";
 
 function App() {
   return (
-    <Card>
-      <div>
-      <h2>Let's get started!</h2>
-    </div>
-    </Card>
-    
+      <Fragment>.
+        <Header />
+        <Meals/>
+    </Fragment>
   );
 }
 
