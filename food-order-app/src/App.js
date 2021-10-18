@@ -1,8 +1,13 @@
+import Card from "./Components/UI/Card";
+
 function App() {
   return (
-    <div>
+    <Card>
+      <div>
       <h2>Let's get started!</h2>
     </div>
+    </Card>
+    
   );
 }
 
