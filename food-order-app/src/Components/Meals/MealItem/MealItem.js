@@ -14,7 +14,7 @@ const MealItem = (props) => {
       amount: validatedAmount,
       price: props.price,
     });
-    console.log(ctx);
+    console.log("in meal item", ctx);
   };
 
   return (
