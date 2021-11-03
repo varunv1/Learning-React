@@ -1,0 +1,21 @@
+.content {
+  align-items: center;
+  background: rgb(43, 41, 41);
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.refresh {
+  width: 50%;
+  font-size: 18px;
+  border-radius: 12px;
+  padding: 5px 10px;
+  background: greenyellow;
+  border: none;
+  transition: 0.3s;
+}
+
+.refresh:hover {
+  width: 55%;
+  padding: 15px 20px;
+}
